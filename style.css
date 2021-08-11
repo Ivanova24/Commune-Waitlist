@@ -1,0 +1,142 @@
+/* ***** Custom Properties ***** */
+:root {
+  --wrapper: max(2rem, 17.4vw - 20rem / 2);
+  --color-bg: hsla(220, 80%, 98%, 1);
+  --color-primary: hsla(255, 43%, 28%, 1);
+  --color-secondary: hsla(258, 43%, 83%, 1);
+  --color-title: hsla(246, 24%, 26%, 1);
+  --color-text: hsla(0, 0%, 33%, 1);
+  --color-placeholder: hsla(0, 0%, 71%, 1);
+  --color-input: hsla(0, 0%, 89%, 1);
+  --color-white: hsla(0, 0%, 100%, 1);
+  --color-third: #545454;
+  --font-body: "Nunito", sans-serif;
+  --font-size-body: 1.8rem;
+  --font-size-title: 3.6rem;
+  --lh-tag: 24.55px;
+  --lh-title: 49px;
+}
+
+/********** Reset **********/
+
+html {
+  font-family: var(--font-body);
+  font-size: 62.5%;
+}
+
+body {
+  font-size: var(--font-size-body);
+}
+
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 27px;
+}
+
+/* ****** Utilities ****** */
+.btn {
+  background-color: var(--color-primary);
+  border-color: transparent;
+  color: var(--color-white);
+  padding: 18px 24px;
+  border-radius: 5px;
+  max-width: 15rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: all 0.5s ease;
+  border: medium solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+/**  Menu **/
+.menu-btn {
+  cursor: pointer;
+}
+
+.menu-btn svg {
+  fill: var(--color-black);
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  top: 75px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+  background-color: var(--color-white);
+  background-image: linear-gradient(
+    120deg,
+    var(--color-primary-bg) 0%,
+    var(--color-secondary-bg) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media screen and (min-width: 43.688rem) {
+  .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    opacity: 1;
+    pointer-events: auto;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 24px;
+    background-color: transparent;
+    background-image: none;
+    padding-block: 0;
+  }
+}
+
+/* ***** Site Styles ***** */
