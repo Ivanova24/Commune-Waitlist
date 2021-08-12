@@ -14,83 +14,86 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
     <title>Commune Waitlist</title>
   </head>
   <body>
-    <section class="container">
-      <header class="header">
-        <img
-          class="header-img"
-          src="/Assets/Logo.svg"
-          width="146px"
-          height="36px"
-          alt="The logo is illustrated as a spaceship traveling and on the right the word Commune"
-        />
-        <button class="menu-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
-          </svg>
-          <svg
-            class="none"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
-            />
-          </svg>
-        </button>
-        <nav class="menu">
-          <ul class="nav-links" role="list">
-            <li class="nav-link"><a href="#">Features</a></li>
-            <li class="nav-link"><a href="#">Affiliates</a></li>
-            <li class="nav-link"><a href="#">Pricing</a></li>
-            <li class="nav-link"><a href="#">Communities</a></li>
-            <button class="btn cta-btn">Join Waitlist</button>
-          </ul>
-        </nav>
-      </header>
-      <article class="hero">
-        <section class="hero-banner">
-          <p>We are now allowing early-access for users. Learn more.</p>
-          <h1>Build a highly engaged community with no effort.</h1>
-          <p>
-            Commune offers the tools you need to build a highly engaged
-            community with little to no effort. Simply setup your Commune
-            workspace, and manage everything from members to content from one
-            central dashboard.
-          </p>
-          <form>
-            <input
-              type="email"
-              for="email"
-              placeholder="Enter your e-mail address"
-              required
-            />
-            <button id="email" class="btn cta-btn">Join Waitlist</button>
-          </form>
-        </section>
-        <section class="hero-companies">
-          <p>Used by these companies:</p>
-          <div>
-            <img src="/Assets/Atlassian-Icon.svg" alt="Atlassian Icon" />
-            <img src="/Assets/Behance-Icon.svg" alt="Behance Icon" />
-            <img src="/Assets/Bing-Icon.svg" alt="BehancemIcon" />
-            <img src="/Assets/Bitbucket-Icon.svg" alt="Bitbucket Icon" />
-            <img src="/Assets/Dropbox-Icon.svg" alt="Dropbox Icon" />
-            <img src="/Assets/Twitch-Icon.svg" alt="Twitch Icon" />
-            <img src="/Assets/Twitter-Icon.svg" alt="Twitter Icon" />
-          </div>
-        </section>
+    <div class="container">
+      <article class="wrapper">
+        <header class="header">
+          <img
+            class="header-img"
+            src="/Assets/Logo.svg"
+            width="146px"
+            height="36px"
+            alt="The logo is illustrated as a spaceship traveling and on the right the word Commune"
+          />
+          <button class="menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+            </svg>
+            <svg
+              class="none"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+              />
+            </svg>
+          </button>
+          <nav class="menu">
+            <ul class="nav-links" role="list">
+              <li class="nav-link"><a href="#">Features</a></li>
+              <li class="nav-link"><a href="#">Affiliates</a></li>
+              <li class="nav-link"><a href="#">Pricing</a></li>
+              <li class="nav-link"><a href="#">Communities</a></li>
+              <button class="btn cta-btn">Join Waitlist</button>
+            </ul>
+          </nav>
+        </header>
+        <article class="hero">
+          <section class="hero-banner">
+            <p>We are now allowing early-access for users. Learn more.</p>
+            <h1>Build a highly engaged community with no effort.</h1>
+            <p>
+              Commune offers the tools you need to build a highly engaged
+              community with little to no effort. Simply setup your Commune
+              workspace, and manage everything from members to content from one
+              central dashboard.
+            </p>
+            <form>
+              <input
+                type="email"
+                for="email"
+                placeholder="Enter your e-mail address"
+                required
+              />
+              <button id="email" class="btn cta-btn">Join Waitlist</button>
+            </form>
+          </section>
+          <section class="hero-companies">
+            <p>Used by these companies:</p>
+            <div>
+              <img src="/Assets/Atlassian-Icon.svg" alt="Atlassian Icon" />
+              <img src="/Assets/Behance-Icon.svg" alt="Behance Icon" />
+              <img src="/Assets/Bing-Icon.svg" alt="BehancemIcon" />
+              <img src="/Assets/Bitbucket-Icon.svg" alt="Bitbucket Icon" />
+              <img src="/Assets/Dropbox-Icon.svg" alt="Dropbox Icon" />
+              <img src="/Assets/Twitch-Icon.svg" alt="Twitch Icon" />
+              <img src="/Assets/Twitter-Icon.svg" alt="Twitter Icon" />
+            </div>
+          </section>
+        </article>
       </article>
-    </section>
+    </div>
   </body>
 </html>
