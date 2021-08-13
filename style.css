@@ -71,19 +71,24 @@ p {
   color: var(--color-white);
   padding: 18px 23px;
   border-radius: 5px;
-  max-width: 15rem;
+  text-align: center;
+  /* max-width: 16rem; */
   font-weight: 700;
   cursor: pointer;
 }
 
 .btn:hover {
   transition: all 0.5s ease;
-  border: medium solid var(--color-primary);
+  border: thin solid var(--color-primary);
   color: var(--color-primary);
   background-color: transparent;
 }
 
 /**  Menu **/
+.none {
+  display: none;
+}
+
 .menu-btn {
   cursor: pointer;
 }
@@ -122,7 +127,7 @@ p {
   pointer-events: auto;
 }
 
-@media screen and (min-width: 43.688rem) {
+@media screen and (min-width: 62.438rem) {
   .menu-btn {
     display: none;
   }
@@ -137,10 +142,15 @@ p {
     align-items: center;
     column-gap: 24px;
     background-color: transparent;
-    padding-block: 0;
+    padding: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    column-gap: 2.4rem;
+    padding: 0;
   }
 }
-
 /* ***** Site Styles ***** */
 
 .container {
@@ -158,5 +168,83 @@ p {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
+.hero {
+  display: grid;
+  row-gap: 32px;
+}
+
+.hero-banner_content {
+  display: grid;
+  row-gap: 13px;
+}
+
+.hero-banner_content p:first-of-type {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 8px 36px 8px 24px;
+  line-height: var(--lh-tag);
+  border-radius: 999px;
+  margin-bottom: 19px;
+  text-align: center;
+}
+
+.hero-banner_content p:first-of-type a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.hero-banner_content h1 {
+  font-size: var(--font-size-title);
+  color: var(--color-title);
+  text-align: center;
+  font-weight: 700;
+}
+
+.hero-banner_content p:last-of-type {
+  color: var(--color-text);
+  text-align: center;
+}
+
+.hero-banner_form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+}
+
+.hero-banner_form input{
+  border: 1px solid var(--color-title);
+  padding: 18px 24px 18px 24px;
+  border-radius: 5px;
+}
+
+.hero-banner_img {
+  display: none;
+}
+
+.hero-companies {
+  display: grid;
+  row-gap: 16px;
+}
+
+.hero-companies p {
+  color: var(--color-third); 
+  font-weight: 700;
+}
+
+.hero-companies_icons {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
+}
+
+/* @media screen and (min-width: 62.438rem) {
+  .hero-banner_img {
+    display: flex;
+  }
+} */
+
+
 
